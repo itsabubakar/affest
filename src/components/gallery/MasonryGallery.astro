@@ -1,0 +1,29 @@
+---
+// Props
+const images = Astro.props.images;
+---
+
+<section class="masonry-gallery mx-auto max-w-7xl gap-6 px-5 sm:grid-cols-3 xl:px-0">
+  {
+    images.map((image: { src: string | null | undefined; alt: string | null | undefined }) => (
+      <div>
+        <img src={image.src} alt={image.alt} class="gallery-item" />
+      </div>
+    ))
+  }
+</section>
+
+<style>
+  .masonry-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .gallery-item {
+    width: 100%;
+    border-radius: 1rem;
+    aspect-ratio: auto 1 / 1; /* Ensures square shape */
+    object-fit: cover;
+  }
+</style>

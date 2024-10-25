@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  description="Our privacy policy will help you understand what information is collected and how it is used."
+  title="Privacy policy · Stone"
+>
+  <div class="mx-auto max-w-3xl">
+    <section class="py-16 sm:py-20">
+      <div class="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="flex flex-col gap-4 sm:gap-6">
+          <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">Gallery</h1>
+          <p
+            class="mx-auto max-w-xl text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl"
+          >
+            We build products for developers and designers.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="justify- mx-auto grid max-w-7xl gap-6 px-5 sm:grid-cols-3 xl:px-0">
+    <a href="/gallery/first">
+      <img class="w-full rounded-3xl" src="/assets/affest.jpg" alt="Hero picture" />
+      <h2 class="pt-4 text-2xl font-medium tracking-tight sm:text-3xl">Title</h2>
+    </a>
+    <a href="/">
+      <img class="w-full rounded-3xl" src="/assets/affest.jpg" alt="Hero picture" />
+      <h2 class="pt-6 text-2xl font-medium tracking-tight sm:text-3xl">Title</h2>
+    </a>
+    <div>
+      <img class="w-full rounded-3xl" src="/assets/affest.jpg" alt="Hero picture" />
+      <h2 class="pt-6 text-2xl font-medium tracking-tight sm:text-3xl">Title</h2>
+    </div>
+  </section>
+</Layout>

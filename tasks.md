@@ -1,0 +1,4 @@
+- [] Create website copy from text sent
+- [] Add an event page
+- [] Populate pages
+- []
