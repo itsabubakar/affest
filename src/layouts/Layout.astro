@@ -14,7 +14,7 @@ const { description, title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" x-cloak x-data :class="{ 'dark': $store.theme.isDark }">
+<html lang="en" x-cloak x-data>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -27,7 +27,7 @@ const { description, title } = Astro.props;
     <title>{title}</title>
     <ViewTransitions />
   </head>
-  <body class="text-primary-950 antialiased transition dark:bg-primary-950 dark:text-primary-200">
+  <body class="text-primary-950 antialiased transition">
     <Header />
     <main>
       <slot />

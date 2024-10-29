@@ -28,10 +28,10 @@ const testimonials = [
   <div class="v mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col items-center gap-12 lg:gap-20">
       <h2 class="mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl">
-        Trusted by the largest companies in the world
+        Pictures from our events
       </h2>
       <div
-        class="divide-primary-900/10 dark:divide-primary-300/10 grid divide-y lg:grid-cols-3 lg:divide-x lg:divide-y-0"
+        class="grid divide-y divide-primary-900/10 dark:divide-primary-300/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0"
       >
         {
           testimonials.map((testimonial) => (
@@ -39,7 +39,7 @@ const testimonials = [
               <div class="flex flex-row gap-2">
                 {[...Array(3)].map(() => (
                   <svg
-                    class="text-primary-600 dark:text-primary-400 h-6 w-6"
+                    class="h-6 w-6 text-primary-600 dark:text-primary-400"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -49,14 +49,14 @@ const testimonials = [
                   </svg>
                 ))}
               </div>
-              <blockquote class="text-primary-950/70 dark:text-primary-200/70 text-center text-lg italic leading-loose">
+              <blockquote class="text-center text-lg italic leading-loose text-primary-950/70 dark:text-primary-200/70">
                 <p>{testimonial.message}</p>
               </blockquote>
               <figcaption class="flex flex-col gap-4">
                 <img class="mx-auto h-8 w-8 rounded-full" src={testimonial.image} alt="" />
                 <div class="text-center">
                   <div class="text-base font-medium">{testimonial.name}</div>
-                  <div class="text-primary-950/70 dark:text-primary-200/70 text-sm">
+                  <div class="text-sm text-primary-950/70 dark:text-primary-200/70">
                     {testimonial.description}
                   </div>
                 </div>
