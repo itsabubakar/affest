@@ -10,20 +10,21 @@ const links = [
     name: 'About',
     href: '/about',
   },
+
   {
     ref: '03',
-    name: 'Events',
-    href: '/events',
-  },
-  {
-    ref: '04',
     name: 'Gallery',
     href: '/gallery',
   },
   {
-    ref: '05',
+    ref: '04',
     name: 'Contact',
     href: '/contact',
+  },
+  {
+    ref: '05',
+    name: 'Register',
+    href: '/register',
   },
 ];
 ---
@@ -31,7 +32,7 @@ const links = [
 <header
   x-data="{ open: false }"
   class="transition"
-  :class="{ 'bg-green-50 dark:bg-primary-400/10': open, 'bg-green-50 dark:bg-primary-950': !(open) }"
+  :class="{ ': open, 'bg-green-50 dark:bg-primary-950': !(open) }"
 >
   <div
     class="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8"
@@ -40,15 +41,15 @@ const links = [
     <div class="flex">
       <a
         href="/"
-        class="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200"
+        class="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950"
       >
-        <span class="sr-only">Stone</span>
+        <span class="sr-only">Affest</span>
         <img
           class="h-24 w-auto"
           width="100"
           height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/affest-logo.png'"
-          alt="Stone"
+          src="/assets/affest-logo.png"
+          alt="Affest"
         />
       </a>
     </div>
@@ -105,13 +106,14 @@ const links = [
   >
     <div class="grid grid-cols-1 gap-16 pb-24 pt-6 lg:grid-cols-2 lg:pt-12">
       <div
-        class="hidden items-center justify-center rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10 lg:flex"
+        class="hidden items-center justify-center rounded-3xl bg-green-500/10 px-6 py-8 dark:bg-primary-400/10 lg:flex"
       >
         <p
           class="max-w-sm text-xl italic leading-loose text-primary-950/70 dark:text-primary-200/70"
         >
-          <span class="font-medium">Stone</span> is a premium Astro theme specially designed for
-          Business, Marketing, SaaS and Startup websites.
+          <span class="font-medium">AFFEST</span> is redefining the Northern narrative, moving
+          beyond stereotypes of insecurity and underdevelopment, showcaing the richness, diversity,
+          and vibrancy of its people.
         </p>
       </div>
 

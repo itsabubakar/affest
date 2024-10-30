@@ -1,17 +1,37 @@
 ---
 const team = [
   {
-    name: 'Floyd Lowe',
-    image: '/assets/team-1.webp',
-    job: 'Senior Designer',
+    name: 'Bilqees Abdulrasheed Shebby Esq',
+    image: '/assets/team/bilqees.jpg',
+    job: 'Executive Director',
   },
   {
-    name: 'Emma Dorsey',
+    name: 'Eslah Yusuf',
     image: '/assets/team-2.webp',
     job: 'Principal Designer',
   },
   {
-    name: 'Emily Mitchell',
+    name: 'Bobby (Kingsley Onyeama)',
+    image: '/assets/team-3.webp',
+    job: 'Senior Developer',
+  },
+  {
+    name: 'Fatima Yahaya',
+    image: '/assets/team-3.webp',
+    job: 'Senior Developer',
+  },
+  {
+    name: 'Jonah Yakubu',
+    image: '/assets/team-3.webp',
+    job: 'Senior Developer',
+  },
+  {
+    name: 'Dare Elijah',
+    image: '/assets/team-3.webp',
+    job: 'Senior Developer',
+  },
+  {
+    name: 'Aisha Abdulrazaq',
     image: '/assets/team-3.webp',
     job: 'Senior Developer',
   },
@@ -25,12 +45,12 @@ const team = [
       <ul role="list" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {
           team.map((item) => (
-            <li class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border px-6 py-8">
+            <li class="rounded-3xl border border-green-500/10 px-6 py-8 dark:border-primary-300/10">
               <div class="space-y-6">
-                <img class="mx-auto h-auto w-16 rounded-full" src={item.image} alt={item.name} />
+                <img class="mx-auto h-52 w-52 rounded-full" src={item.image} alt={item.name} />
                 <div class="text-center">
                   <h3 class="text-lg font-medium">{item.name}</h3>
-                  <p class="text-primary-950/70 dark:text-primary-200/70 text-base">{item.job}</p>
+                  <p class="text-base text-primary-950/70 dark:text-primary-200/70">{item.job}</p>
                 </div>
               </div>
             </li>

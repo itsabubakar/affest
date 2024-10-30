@@ -4,11 +4,6 @@ const bottomLinks = [
     header: 'Social',
     links: [
       {
-        name: 'Github',
-        href: 'https://github.com/',
-        isExternal: true,
-      },
-      {
         name: 'Twitter',
         href: 'https://twitter.com/',
         isExternal: true,
@@ -38,34 +33,10 @@ const bottomLinks = [
         href: '/about',
         isExternal: false,
       },
-      {
-        name: 'Pricing',
-        href: '/pricing',
-        isExternal: false,
-      },
+
       {
         name: 'Contact',
         href: '/contact',
-        isExternal: false,
-      },
-    ],
-  },
-  {
-    header: 'Legal',
-    links: [
-      {
-        name: 'Privacy',
-        href: '/privacy',
-        isExternal: false,
-      },
-      {
-        name: '404',
-        href: '/404',
-        isExternal: false,
-      },
-      {
-        name: 'Styleguide',
-        href: '/styleguide',
         isExternal: false,
       },
     ],
@@ -74,7 +45,7 @@ const bottomLinks = [
 ---
 
 <footer
-  class="bg-primary-500/10 dark:bg-primary-400/10 mt-16 py-16 lg:mt-20 lg:py-20"
+  class="mt-16 bg-green-500/10 py-16 dark:bg-primary-400/10 lg:mt-20 lg:py-20"
   aria-labelledby="footer-heading"
 >
   <h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -86,13 +57,13 @@ const bottomLinks = [
           width="65"
           height="40"
           :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
-          alt="Stone"
+          alt="Affest"
         />
-        <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
-          Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
-          Startup websites.
+        <p class="text-base text-primary-950/70">
+          Redefining the Northern narrative, moving beyond stereotypes of insecurity and
+          underdevelopment, showcaing the richness, diversity, and vibrancy of its people.
         </p>
-        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2023 Stone</p>
+        <p class="text-sm text-primary-950/70">© 2023 Affest</p>
       </div>
 
       <!-- Bottom links -->
@@ -106,7 +77,7 @@ const bottomLinks = [
                   <li>
                     <a
                       href={link.href}
-                      class="focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200 inline-flex items-center gap-1 rounded-md text-base hover:underline focus-visible:outline focus-visible:outline-2"
+                      class="inline-flex items-center gap-1 rounded-md text-base hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200"
                       target={link.isExternal ? '_blank' : undefined}
                       rel={link.isExternal ? 'noopener' : undefined}
                     >

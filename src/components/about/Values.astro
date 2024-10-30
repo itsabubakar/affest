@@ -5,13 +5,13 @@ const values = [
       ref: '01',
       name: 'Research',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'We believe in sourcing out the inherent talent and creativity in the North, and we approach our work with eager and keen eyes for any form of creativity that spans across the food and fashion industry, ensuring that all have an opportunity to express and show the world what they can do.',
     },
     {
       ref: '02',
       name: 'Innovation',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'We believe in showcasing rich, entertaining and educative content from Arewa culture to the rest of the world; to use the power of entertainment to transform the lens by which the world views the North.',
     },
   ],
   [
@@ -19,13 +19,27 @@ const values = [
       ref: '03',
       name: 'Teamwork',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'We believe in the power of partnerships and collaboration to create lasting change. We work closely with local communities, fashion designers, and other NGOs to build networks and share knowledge, amplifying voices and creating a united front for food and fashion from Northern Nigeria.',
     },
     {
       ref: '04',
-      name: 'Respect',
+      name: 'Empowerment:',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'We strive to empower individuals by providing them with the tools, skills, and resources necessary to overcome the challenges they face. Through educational programs, vocational training, and men tor-ship,we enable individuals to build a brighter future for themselves and their communities.',
+    },
+  ],
+  [
+    {
+      ref: '05',
+      name: 'Diversity:',
+      description:
+        'We embrace and celebrate the rich diversity of cultures, traditions, and identities that span across the nineteen states of Northern Nigeria. We ensure that our programs and initiatives are inclusive, respecting and valuing the unique perspectives and contributions of all individuals.',
+    },
+    {
+      ref: '06',
+      name: 'Accountability:',
+      description:
+        'We are committed to transparency and accountability in all aspects of our work. We diligently monitor and evaluate the impact of our programs, ensuring that the resources entrusted to us are used effectively and efﬁciently.',
     },
   ],
 ];
@@ -35,7 +49,7 @@ const values = [
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-8 lg:gap-12">
       <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">CORE VALUES (R-CEEDA)</h2>
-      <div class="grid gap-8 lg:grid-cols-2">
+      <div class="grid gap-8 lg:grid-cols-3">
         {
           values.map((column, index) => (
             <div class:list={['space-y-8', index === 1 && 'lg:mt-16']}>
@@ -43,8 +57,8 @@ const values = [
                 <div class="flex flex-col gap-12 rounded-3xl bg-green-500/10 px-6 py-8 ">
                   <p class="text-sm">{value.ref}</p>
                   <div class="flex flex-col gap-4">
-                    <h3 class="text-xl font-medium">{value.name}</h3>
-                    <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+                    <h3 class="text-2xl font-medium">{value.name}</h3>
+                    <p class="text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
                       {value.description}
                     </p>
                   </div>

@@ -8,11 +8,33 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  description="Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and Startup websites."
-  title="Stone · Premium Astro template"
+  description="Redefining the Northern narrative often associated with the region—moving beyond stereotypes of insecurity and underdevelopment to showcase the richness, diversity, and vibrancy of its people."
+  title="Affest · Fashion & Food Festival"
 >
   <Hero />
   <Services />
   <About />
-  <Testimonials />
+
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <h2 class="mx-auto max-w-xl pb-6 text-center text-3xl font-medium tracking-tight sm:text-4xl">
+      Gallery
+    </h2>
+    <section class="justify- mx-auto grid max-w-7xl gap-6 px-5 sm:grid-cols-3 xl:px-0">
+      <a href="/gallery/first">
+        <img class="h-80 w-full" src="/assets/gallery/durbar/img1.jpg" alt="Hero picture" />
+      </a>
+      <a href="/gallery/second">
+        <img class="h-80 w-full" src="/assets/affest.jpg" alt="Hero picture" />
+      </a>
+      <div>
+        <img class="h-80 w-full" src="/assets/affest.jpg" alt="Hero picture" />
+      </div>
+    </section>
+    <a
+      href="/gallery"
+      class="mt-4 inline-flex items-center justify-center rounded-full border border-transparent bg-green-600 px-5 py-3 text-base font-medium text-white transition hover:bg-green-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+    >
+      View more
+    </a>
+  </div>
 </Layout>
