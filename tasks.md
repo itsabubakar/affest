@@ -1,4 +1,6 @@
-- [] Create website copy from text sent
-- [] Add an event page
-- [] Populate pages
-- []
+- []x Create website copy from text sent
+- [x] Populate pages
+- [z] Add payment link
+- [] Add pictures of team members
+- [] Add pictures chefs
+- [] add contact details
