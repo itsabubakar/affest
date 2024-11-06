@@ -7,7 +7,7 @@ const team = [
   },
 
   {
-    name: 'Aisha Abdulrazaq',
+    name: 'Fatima Balarabe',
     image: '/assets/affest/fati.jpg',
 
     job: 'Brand and communications manager',
@@ -19,43 +19,28 @@ const team = [
   },
   {
     name: 'Eslah Yusuf',
-    image: '/assets/team-2.webp',
-    job: 'Principal Designer',
+    // image: '/assets/team-2.webp',
+    // job: 'Principal Designer',
   },
   {
     name: 'Bobby (Kingsley Onyeama)',
-    image: '/assets/team-3.webp',
-    job: 'Senior Developer',
+    // image: '/assets/team-3.webp',
+    // job: 'Senior Developer',
   },
   {
     name: 'Fatima Yahaya',
-    image: '/assets/team-3.webp',
-    job: 'Senior Developer',
+    // image: '/assets/team-3.webp',
+    // job: 'Senior Developer',
   },
   {
     name: 'Jonah Yakubu',
-    image: '/assets/team-3.webp',
-    job: 'Senior Developer',
+    // image: '/assets/team-3.webp',
+    // job: 'Senior Developer',
   },
   {
     name: 'Dare Elijah',
-    image: '/assets/team-3.webp',
-    job: 'Senior Developer',
-  },
-  {
-    name: 'Aisha Abdulrazaq',
-    image: '/assets/team-3.webp',
-    job: 'Senior Developer',
-  },
-  {
-    name: 'Aisha Abdulrazaq',
-    image: '/assets/team-3.webp',
-    job: 'Media',
-  },
-  {
-    name: 'Aisha Abdulrazaq',
-    image: '/assets/team-3.webp',
-    job: 'Hr',
+    // image: '/assets/team-3.webp',
+    // job: 'Senior Developer',
   },
 ];
 ---
@@ -69,10 +54,14 @@ const team = [
           team.map((item) => (
             <li class="rounded-3xl border border-green-500/10 px-6 py-8 dark:border-primary-300/10">
               <div class="space-y-6">
-                <img class="mx-auto h-52 w-52 rounded-full" src={item.image} alt={item.name} />
+                {item.image && (
+                  <img class="mx-auto h-52 w-52 rounded-full" src={item.image} alt={item.name} />
+                )}
                 <div class="text-center">
                   <h3 class="text-lg font-medium">{item.name}</h3>
-                  <p class="text-base text-primary-950/70 dark:text-primary-200/70">{item.job}</p>
+                  {item.job && (
+                    <p class="text-base text-primary-950/70 dark:text-primary-200/70">{item.job}</p>
+                  )}
                 </div>
               </div>
             </li>
