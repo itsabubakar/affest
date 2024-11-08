@@ -52,16 +52,14 @@ const team = [
       <ul role="list" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {
           team.map((item) => (
-            <li class="rounded-3xl border border-green-500/10 px-6 py-8 dark:border-primary-300/10">
+            <li class="rounded-3xl border border-green-500/10 px-6 py-8 ">
               <div class="space-y-6">
                 {item.image && (
                   <img class="mx-auto h-52 w-52 rounded-full" src={item.image} alt={item.name} />
                 )}
                 <div class="text-center">
                   <h3 class="text-lg font-medium">{item.name}</h3>
-                  {item.job && (
-                    <p class="text-base text-primary-950/70 dark:text-primary-200/70">{item.job}</p>
-                  )}
+                  {item.job && <p class="text-base text-primary-950/70 ">{item.job}</p>}
                 </div>
               </div>
             </li>

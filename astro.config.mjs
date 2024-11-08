@@ -7,5 +7,8 @@ export default defineConfig({
   experimental: {
     viewTransitions: true,
   },
+  server: {
+    host: true,
+  },
   integrations: [tailwind(), compress()],
 });
