@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MasonryGallery from '../../components/gallery/MasonryGallery.astro';
+
+const images = [
+  {
+    src: '/assets/royal-feast/img15.webp',
+    alt: 'Hero picture',
+    title: 'First Image',
+  },
+  { src: '/assets/royal-feast/img1.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img2.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img3.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img4.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img5.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img6.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img7.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img8.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img9.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img10.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img11.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img12.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img13.webp', alt: 'Hero picture' },
+  { src: '/assets/royal-feast/img14.webp', alt: 'Hero picture' },
+];
+---
+
+<Layout description="Fashion Walk" title="Gallery · Affest">
+  <div class="mx-auto max-w-3xl">
+    <section class="py-16 sm:py-20">
+      <div class="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="flex flex-col gap-4 sm:gap-6">
+          <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">Gallery</h1>
+          <!-- <p
+            class="mx-auto max-w-xl text-lg text-primary-950/70 sm:text-xl"
+          >
+            We build products for developers and designers.
+          </p> -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <MasonryGallery images={images} />
+</Layout>
