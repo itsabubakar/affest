@@ -3,17 +3,27 @@ const services = [
   {
     name: 'Non Profit',
     description:
-      'Women Aware of Rights Initiative (WAR NG) is a non-profit organization founded in 2018 to build a network of empowered women advocating for social justice and combating domestic violence in Kaduna State and across Nigeria. As a non-governmental, non-religious, and non-political organization, WAR NG is dedicated to creating enlightened, empowered, and just communities. The organization works to promote educational development, eradicate the ignorance that perpetuates domestic violence, empower women through skill acquisition, and provide free legal services and psychosocial support to survivors.',
+      'Women Aware of Rights Initiative (WAR NG) is a non-profit organization founded in 2018 to build a network of empowered women advocating for social justice and combating domestic violence in Kaduna State and across Nigeria. As a non-governmental, non-religious, and non-political organization, WAR NG is dedicated to creating enlightened, empowered, and just communities.',
   },
-  {
-    name: 'Support',
-    description:
-      'Through AFFEST’s financial support, WAR NG is able to focus on its three key areas: advocacy, justice, and women’s empowerment. With funding from AFFEST, WAR NG raises awareness and pushes for policies to protect women’s rights, provides legal services to domestic violence survivors, and offers empowerment programs that help women build skills for self-reliance and resilience in their communities.',
-  },
+ 
   {
     name: 'Maintain',
     description:
       'As a young organization with AFFEST’s ongoing backing, WAR NG is committed to addressing Gender-Based Violence (GBV) and driving change for women in Nigeria. By supporting WAR NG, AFFEST is directly contributing to building safer, more equitable communities for women and girls in Northern Nigeria.',
+  },
+   {
+    name: 'Support',
+    description: `
+      <p>The Arewa Fashion and Food Festival (AFFEST) is more than a celebration of Northern Nigerian culture—it’s a movement for change. Proceeds from AFFEST directly support the work of <strong>Women Aware of Rights Initiative (WAR NG)</strong> and <strong>INGANCI</strong>, our safe space and rehabilitation center for survivors of Sexual and Gender-Based Violence (SGBV).</p>
+      <p><strong>Funds raised through AFFEST are used to:</strong></p>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Provide pro bono legal aid and psychosocial support to survivors of SGBV.</li>
+        <li>Equip Inganci with essential supplies, therapeutic materials and vocational tools for healing and empowerment.</li>
+        <li>Run awareness campaigns and educational outreach on women’s rights and the VAPP Act.</li>
+        <li>Train survivors in art, fashion and food enterprise, helping them rebuild their lives with dignity and economic independence.</li>
+      </ul>
+      <p>Every ticket purchased, every item sold and every partnership formed through AFFEST fuels our mission to break the culture of silence, restore hope, and build safer communities for women and children across Northern Nigeria.</p>
+    `,
   },
 ];
 ---
@@ -28,7 +38,7 @@ const services = [
             <div class="flex flex-col gap-12 rounded-3xl bg-green-500/10 px-6 py-8 ">
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-medium">{service.name}</h3>
-                <p class="text-base text-primary-950/70  sm:text-lg">{service.description}</p>
+                 <div class="text-base text-primary-950/70 sm:text-lg" set:html={service.description} />
               </div>
             </div>
           ))
