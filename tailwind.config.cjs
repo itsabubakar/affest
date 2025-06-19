@@ -12,6 +12,7 @@ module.exports = {
       primary: colors.gray,
       green: colors.green,
       black: colors.black,
+      orange: colors.orange,
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
