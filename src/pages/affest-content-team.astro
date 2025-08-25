@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+type Member = {
+  name: string;
+  role: string;
+  headshot: string;
+};
+
+const team: Member[] = [
+  {
+    name: 'Fatima Balarabe',
+    role: 'Content Team Lead',
+    headshot: '/assets/affest/fati.jpg',
+  },
+  {
+    name: 'Adalo Phanuel Adamu',
+    role: 'Content Team',
+    headshot: '/assets/affest/adalo.JPG',
+  },
+  {
+    name: 'Basheer Abdulhakeem',
+    role: 'Content Team',
+    headshot: '/assets/affest/basheer.jpg',
+  },
+];
+---
+
+<Layout
+  title="Meet the Content Team · Affest"
+  description="Say hello to the people behind the words, visuals, and strategy."
+>
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <!-- Page header -->
+    <header class="py-14 text-center sm:py-20">
+      <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+        Meet the Content Team
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-primary-950/70">
+        The strategists, editors, and creators shaping every story we publish.
+      </p>
+    </header>
+
+    <!-- Team grid -->
+    <section aria-label="Content Team" class="pb-20">
+      <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          team.map((m) => (
+            <article class="flex flex-col items-center rounded-lg border border-green-100 p-6 text-center">
+              <img
+                src={m.headshot}
+                alt={`Portrait of ${m.name}`}
+                class="h-40 w-40 rounded-full object-cover"
+                loading="lazy"
+                width="160"
+                height="160"
+              />
+              <div class="mt-6">
+                <h2 class="mt-5 text-2xl font-semibold tracking-tight">{m.name}</h2>
+                <p class="mt-1 text-sm font-medium uppercase tracking-wide text-green-700">
+                  {m.role}
+                </p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</Layout>

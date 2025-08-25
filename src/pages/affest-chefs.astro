@@ -3,94 +3,99 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout description="Affest Chefs Highlight" title="Chefs · Affest">
-  <div class="mx-auto max-w-3xl">
-    <section class="py-16 sm:py-20">
-      <div class="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8">
-        <div class="flex flex-col gap-4 sm:gap-6">
-          <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">
-            Affest Chefs Highlight
-          </h1>
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <header class="py-14 text-center sm:py-20">
+      <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+        Affest Chefs Highlight
+      </h1>
+    </header>
+
+    <section class="grid grid-cols-1 gap-12 sm:gap-16">
+      <!-- Amal -->
+      <article
+        class="grid grid-cols-1 items-start gap-6 border-b border-green-100 pb-10 sm:grid-cols-3"
+      >
+        <div class="flex flex-col items-center sm:items-start">
+          <img
+            class="h-80 w-auto rounded-md object-cover"
+            src="/assets/chef-2.jpg"
+            alt="Portrait of Amal Abdulrazaq Muhammad"
+          />
+          <h2
+            class="mt-4 text-center text-2xl font-semibold tracking-tight sm:text-left sm:text-3xl"
+          >
+            Amal Abdulrazaq Muhammad
+          </h2>
         </div>
-      </div>
-    </section>
-  </div>
-  <div class="mx-auto gap-6 px-5 sm:max-w-7xl sm:grid-cols-3 xl:px-0">
-    <div
-      class="mb-20 flex flex-col items-center justify-center gap-x-6 border-b border-b-green-100 pb-4 sm:flex-row"
-    >
-      <div class="flex flex-shrink-0 flex-col gap-4">
-        <img class="h-80 self-center" src="/assets/chef-2.jpg" alt="Hero picture" />
-        <h2 class="pt-2 text-2xl font-medium tracking-tight sm:text-3xl">
-          Amal Abdulrazaq Muhammad
-        </h2>
-      </div>
-      <div>
-        <p class="pb-2 text-lg text-primary-950/70 sm:text-xl">
-          Amal Abdulrazaq Muhammad is a dynamic photographer and storyteller, weaving together the
-          art of imagery and the power of words. A graduate of Kaduna State University, where she
-          studied mass communication, Amal finds inspiration in the world around her, capturing
-          moments through her lens while penning short stories and poetry that resonate with her
-          inner thoughts and emotions.
-        </p>
-        <p class="pb-2 text-lg text-primary-950/70 sm:text-xl">
-          Her culinary passion ignited at just six years old, and by the time she was nine, she was
-          exploring the kitchen independently, guided by the encouragement of family and friends.
-          For Amal, the kitchen is a sanctuary—a space where she transforms her feelings into
-          delicious creations and clears her mind amidst life's complexities.
-        </p>
-        <p class="pb-2 text-lg text-primary-950/70 sm:text-xl">
-          With a unique blend of creativity in photography, writing, and cooking, Amal continues to
-          express her vibrant spirit, inviting others to see the beauty in both art and everyday
-          life.
-        </p>
-      </div>
-    </div>
 
-    <div
-      class="mb-20 flex flex-col items-center justify-center gap-x-6 border-b border-b-green-100 pb-4 sm:flex-row"
-    >
-      <div class="flex flex-shrink-0 flex-col gap-4">
-        <img class="h-80 self-center" src="/assets/chef-1.jpeg" alt="Hero picture" />
-
-        <h2 class="pt-2 text-2xl font-medium tracking-tight sm:text-3xl">Jonah Yakubu</h2>
-      </div>
-      <div>
-        <p class="pb-2 text-lg text-primary-950/70 sm:text-xl">
-          Jonah Yakubu is a renowned expert in the hospitality industry, with over 10 years of
-          experience consulting for top-tier restaurants across Nigeria. Having worked with notable
-          establishments like 5 Platter Lagos, RiftValley Grill House, and The Blueplate Restaurant,
-          where he is also a managing partner, Jonah brings unparalleled expertise in elevating
-          restaurant operations and profitability.
-        </p>
-        <p class="pb-2 text-lg text-primary-950/70 sm:text-xl">
-          Through JonahBest Consulting, he has trained over 100 chefs and 200 waiters, helping them
-          refine their skills, improve service, and set new standards in the industry. Jonah's
-          mission is to revolutionize the hospitality space by promoting healthy eating,
-          implementing world-class operational standards, and empowering restaurant owners to
-          thrive. His innovative approach focuses on reducing costs, improving sales, and fostering
-          a positive working environment for staff.
-
-          <p class="pb-2 text-lg text-primary-950/70 sm:text-xl">
-            Jonah is also the founder and creator of The Blueplate Restaurant and VITdaa app, a
-            groundbreaking platform that connects restaurants, hotels, and customers, allowing users
-            to browse menus, book tables, and make payments easily.
+        <div class="sm:col-span-2">
+          <p class="text-lg leading-8 text-primary-950/70">
+            Amal Abdulrazaq Muhammad is a dynamic photographer and storyteller, weaving together the
+            art of imagery and the power of words. A graduate of Kaduna State University, where she
+            studied mass communication, Amal finds inspiration in the world around her, capturing
+            moments through her lens while penning short stories and poetry that resonate with her
+            inner thoughts and emotions.
           </p>
-        </p>
-      </div>
-    </div>
-    <div
-      class="mb-20 flex flex-col items-center justify-center gap-x-6 border-b border-b-green-100 pb-4 sm:flex-row"
-    >
-      <div class="flex-shrink-0">
-        <img class="h-80" src="/assets/chef-3.jpeg" alt="Hero picture" />
-        <h2 class="pt-2 text-2xl font-medium tracking-tight sm:text-3xl">Aisha Tilde</h2>
-      </div>
-      <div>
-        <p class="pb-2 text-lg text-primary-950/70 sm:text-xl">
-          A chef | Student nurse | Food enthusiast.Passionate about blending culinary
-          creativity,northern delicacies with healthcare insights.
-        </p>
-      </div>
-    </div>
-  </div>
+          <p class="mt-4 text-lg leading-8 text-primary-950/70">
+            Her culinary passion ignited at just six years old, and by the time she was nine, she
+            was exploring the kitchen independently, guided by the encouragement of family and
+            friends. For Amal, the kitchen is a sanctuary—a space where she transforms her feelings
+            into delicious creations and clears her mind amidst life's complexities.
+          </p>
+          <p class="mt-4 text-lg leading-8 text-primary-950/70">
+            With a unique blend of creativity in photography, writing, and cooking, Amal continues
+            to express her vibrant spirit, inviting others to see the beauty in both art and
+            everyday life.
+          </p>
+        </div>
+      </article>
+
+      <!-- Jonah -->
+      <article
+        class="grid grid-cols-1 items-start gap-6 border-b border-green-100 pb-10 sm:grid-cols-3"
+      >
+        <div class="flex flex-col items-center sm:items-start">
+          <img
+            class="h-80 w-auto rounded-md object-cover"
+            src="/assets/team/amina.jpg"
+            alt="Portrait of Jonah Yakubu"
+          />
+          <h2
+            class="mt-4 text-center text-2xl font-semibold tracking-tight sm:text-left sm:text-3xl"
+          >
+            Amina Maiwada
+          </h2>
+        </div>
+
+        <div class="sm:col-span-2">
+          <p></p>
+        </div>
+      </article>
+
+      <!-- Aisha -->
+      <article
+        class="grid grid-cols-1 items-start gap-6 border-b border-green-100 pb-10 sm:grid-cols-3"
+      >
+        <div class="flex flex-col items-center sm:items-start">
+          <img
+            class="h-80 w-auto rounded-md object-cover"
+            src="/assets/chef-3.jpeg"
+            alt="Portrait of Aisha Tilde"
+          />
+          <h2
+            class="mt-4 text-center text-2xl font-semibold tracking-tight sm:text-left sm:text-3xl"
+          >
+            Aisha Tilde
+          </h2>
+        </div>
+
+        <div class="sm:col-span-2">
+          <p class="text-lg leading-8 text-primary-950/70">
+            A chef | Student nurse | Food enthusiast. Passionate about blending culinary creativity,
+            northern delicacies, and healthcare insights.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
 </Layout>
