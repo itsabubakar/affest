@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MasonryGallery from '../../components/gallery/MasonryGallery.astro';
+
+const images = [
+  {
+    src: '/assets/loisiana/img1.JPG',
+    alt: 'Hero picture',
+    title: 'First Image',
+  },
+  { src: '/assets/loisiana/img2.JPG', alt: 'Hero picture' },
+  { src: '/assets/loisiana/img3.JPG', alt: 'Hero picture' },
+  { src: '/assets/loisiana/img4.JPG', alt: 'Hero picture' },
+  { src: '/assets/loisiana/img5.JPG', alt: 'Hero picture' },
+  { src: '/assets/loisiana/img6.JPG', alt: 'Hero picture' },
+  { src: '/assets/loisiana/img7.JPG', alt: 'Hero picture' },
+  { src: '/assets/loisiana/img8.JPG', alt: 'Hero picture' },
+  { src: '/assets/loisiana/img9.JPG', alt: 'Hero picture' },
+  { src: '/assets/loisiana/img10.JPG', alt: 'Hero picture' },
+  { src: '/assets/loisiana/img11.JPG', alt: 'Hero picture' },
+];
+---
+
+<Layout
+  description="Our privacy policy will help you understand what information is collected and how it is used."
+  title="Privacy policy · Affest"
+>
+  <div class="mx-auto max-w-3xl">
+    <section class="py-16 sm:py-20">
+      <div class="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="flex flex-col gap-4 sm:gap-6">
+          <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">Gallery</h1>
+          <!-- <p
+            class="mx-auto max-w-xl text-lg text-primary-950/70  sm:text-xl"
+          >
+            We build products for developers and designers.
+          </p> -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <MasonryGallery images={images} />
+</Layout>
