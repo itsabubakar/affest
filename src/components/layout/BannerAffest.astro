@@ -1,0 +1,58 @@
+---
+export interface Props {
+  ctaHref?: string;
+  class?: string; // extra classes from parent
+}
+
+const { ctaHref = '#', class: extra = '' } = Astro.props;
+
+// Unique pattern id so multiple banners on a page won't clash
+const patternId = `waves-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<section
+  class={`relative w-full overflow-hidden bg-green-500 text-white min-h-[160px] `}
+  aria-label="Affest 2025 registration banner"
+>
+  <!-- Flat wavy background pattern (no gradients) -->
+  <svg
+    class="pointer-events-none absolute inset-0 h-full w-full"
+    viewBox="0 0 1440 660"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <defs>
+      <pattern id={patternId} width="180" height="180" patternUnits="userSpaceOnUse">
+        <path d="M0,90 C40,40 140,40 180,90 C140,140 40,140 0,90 Z" fill="white" opacity="0.06"
+        ></path>
+        <path d="M-90,0 C-50,-50 50,-50 90,0 C50,50 -50,50 -90,0 Z" fill="white" opacity="0.05"
+        ></path>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill={`url(#${patternId})`}></rect>
+  </svg>
+
+  <!-- Content -->
+  <div class="relative mx-auto flex h-full max-w-6xl items-center px-5 py-10 md:px-8">
+    <div class="max-w-2xl">
+      <p class="text-xs uppercase tracking-wider text-white/80 md:text-sm">
+        Arewa Fashion &amp; Food Festival
+      </p>
+      <h1 class="mt-2 text-3xl font-extrabold leading-tight md:text-5xl">
+        Register Now for Affest 2025
+      </h1>
+      <p class="mt-3 text-base text-white/90 md:text-lg">
+        The Chòngai Soigyè — <span class="whitespace-nowrap">Cheering on in Southern Colours</span>
+      </p>
+
+      <div class="mt-6">
+        <a
+          href={'https://forms.gle/A1hFQaAMwtXUmjsM9'}
+          class="bg-amber-500 inline-flex items-center justify-center rounded-md px-5 py-3 font-semibold text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 active:translate-y-[1px]"
+        >
+          Register Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
